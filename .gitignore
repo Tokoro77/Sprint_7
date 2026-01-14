@@ -1,5 +1,4 @@
 ﻿# Maven target directory - игнорируем все КРОМЕ allure-results
-target/
 !target/allure-results/
 
 # Maven wrapper
