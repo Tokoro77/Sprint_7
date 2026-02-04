@@ -1,14 +1,25 @@
-target/
+﻿# Maven target directory - игнорируем все КРОМЕ allure-results
+!target/allure-results/
+
+# Maven wrapper
 !.mvn/wrapper/maven-wrapper.jar
+
+# Source directories targets (for multi-module projects)
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+# Allure reports
+target/allure-report/
+target/site/
+
+# Allure cache
+.allure/
+
+# Kotlin
 .kotlin
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -37,3 +48,14 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Logs ###
+*.log
+logs/
+
+### System files ###
+*.swp
+*.swo
+*~
+Thumbs.db
+.idea/
